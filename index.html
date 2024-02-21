@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Lab1</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css"/> 
+    
+    <script src="https://js.arcgis.com/4.9/"></script>
+    
+    <title>Lab3</title>
 </head>
 <body>
     <main class="page">
@@ -16,7 +25,7 @@
             <menu class="menu">
                 <li class="menu__item"><a href="https://www.google.com/">google</a></li>
                 <li class="menu__item"><a href="https://www.yandex.ru">yandex</a></li>
-            </nav>
+            </menu>
         </aside>
 
         <div class="content">
@@ -39,7 +48,34 @@
                 <div class="grid__item"></div>
                 <div class="grid__item"></div>
             </div>
+
+            <form class="form">
+                <input id="tags" type="text" class="from__search-input" title="search">
+                <input id="spin" type="number" class="from__number-input" title="number input">
+                <input id="datepicker" type="date" class="from__date-input" title="date input">
+
+            </form>
+
+            <div id="accordion">
+                <h3>Section1</h3>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo corporis fugit consectetur? Minus quam sint tenetur! Deserunt, amet autem.</p>
+                </div>
+                <h3>Section2</h3>
+                <div>
+                    <p>Modi hic nisi consequuntur expedita, esse cum ipsam ipsum, tempore accusantium error qui, itaque necessitatibus corporis quam aperiam voluptates animi?</p>
+                </div>
+                <h3>Section3</h3>
+                <div>
+                    <p>Doloremque voluptatem, quo alias repellendus dicta possimus, quasi debitis eaque officiis dolores porro, quia esse ratione quaerat? Iusto, itaque laborum!</p>
+                </div>
+            </div>
+
+            <div id="map">
+
+            </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
